@@ -12,6 +12,11 @@
  * @package         One_Time_Login
  */
 
+if (!function_exists('add_action')) {
+	// We are running outside of the context of WordPress.
+	return;
+}
+
 /**
  * Generate one or multiple one-time login URL(s) for any user.
  *
